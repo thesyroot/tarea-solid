@@ -17,15 +17,13 @@ public class MenuView {
     public void showMenu(){
         this.menuShower.show("---------GESTION DE CLIENTES----------\n" +
                 "1. Alta de nuevos clientes.\n" +
-                "2. DEJADO AL FINAL.\n" +
                 "3. Determinar si el cliente se encuentra registrado.\n" +
                 "4. Listar clientes.\n" +
-                "5. NO IMPLEMENTADO.\n" +
                 "------------------------------------\n"
         );
     }
 
     public int nextOption(){
-        return this.menuAsker.askInt("opcion");
+        return this.menuAsker.askInt("numero");
     }
 }

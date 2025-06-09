@@ -18,17 +18,8 @@ public class MenuController {
         while(option != 0){
             menuView.showMenu();
             option = menuView.nextOption();
-            switch (option){
-                case 1:
-                    this.coreController.getClientController().add();
-                    break;
-                case 3:
-                    this.coreController.getClientController().alredyExist();
-                    break;
-                case 4:
-                    this.coreController.getClientController().showList();
-                    break;
-            }
+
+            this.coreController.getCommands().get(option).execute();
         }
     }
 }
