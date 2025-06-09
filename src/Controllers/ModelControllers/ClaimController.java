@@ -1,6 +1,7 @@
 package Controllers.ModelControllers;
 
 import Views.ClaimView;
+import lombok.Getter;
 import models.Claim;
 import models.Client;
 import models.State;
@@ -12,6 +13,7 @@ import java.util.Set;
 
 public class ClaimController implements GenericModelController{
     private final ClaimView claimView;
+    @Getter
     private final Set<Claim> claimSet;
 
     public ClaimController(ClaimView claimView) {
